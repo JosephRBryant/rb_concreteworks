@@ -90,6 +90,7 @@ nav {
     grid-row-gap: 0px;
     align-content: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .hero-image {
@@ -136,12 +137,48 @@ nav {
 .hero-text-h1 {
     font-size: calc(10pt + 4vw);
     letter-spacing: 0.15em;
+    opacity: 0.9;
 }
 
 .hero-text-p {
     font-size: calc(10pt + 1vw);
     margin-top: 0.2em;
     font-weight: 300;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(30vw, 160px);
+    grid-gap: 1em;
+    margin: 1em;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .hero-text-div {
+        max-width: 40vw;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(40vw, 160px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(80vw, 160px);
+    }
+    
 }
 
 /*
@@ -184,6 +221,8 @@ nav {
 
 */
 
+
+/*
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -196,3 +235,73 @@ nav {
 .photo-grid img {
     width: 100%;
 }
+*/
+/*
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-grid {
+    margin: 0 0.65rem;
+}
+
+.photo {
+    height: auto;
+    margin: 0.5rem;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 640px) {
+    .phot-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        grid-auto-flow: row dense;
+    }
+
+    .photo {
+        margin: 0.7rem;
+    }
+
+    .photo:first-child {
+        grid-row: span 1;
+    }
+
+    .photo:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: span 2;
+    }
+
+    .photo:nth-child(6),
+    .photo:nth-child(8) {
+        grid-row: span 2;
+    }
+}
+
+@media (min-width: 960px) {
+    .phot-grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, auto-flow);
+    }
+    
+    .photo:first-child,
+    .photo:nth-child(7),
+    .photo:nth-child(8) {
+        grid-column: span 2;
+        grid-row: span 1;        
+    }
+
+    .photo:nth-child(2) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+*/
+
