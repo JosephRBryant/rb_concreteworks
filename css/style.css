@@ -287,6 +287,7 @@ nav {
     }
     
     .print img {
+        margin-top: 1.25em;
         width: 95px;
         filter: invert(38%) sepia(0%) saturate(62%) hue-rotate(196deg) brightness(91%) contrast(106%);
     }
