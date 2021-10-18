@@ -89,6 +89,7 @@ nav {
 .logo img {
     height: 70px;
     width: auto;
+    filter: invert(38%) sepia(0%) saturate(62%) hue-rotate(196deg) brightness(91%) contrast(106%);
 }
 
 .logo-mobile {
@@ -176,7 +177,7 @@ nav {
     position: relative;
     justify-content: space-between;
     text-align: center;
-    margin: 60px 120px 60px 120px;
+    margin: 60px 260px 60px 260px;
 }
 
 .skill-container img {
@@ -186,7 +187,6 @@ nav {
 .cad {
     max-width: 400px;
     margin: 30px;
-
 }
 
 .print {
@@ -232,7 +232,7 @@ nav {
     object-fit: cover;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1490px) {
 
     .skill {
         text-align: center;
@@ -254,19 +254,30 @@ nav {
     }
     
     .cad {
-        max-width: 400px;
-        margin: 30px;
-    
+        max-width: 300px;
+        margin: 10px;
     }
     
+    .cad-text {
+        text-align: left;
+    }
+
     .print {
-        max-width: 400px;
-        margin: 30px;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .print-text {
+        text-align: left;
     }
     
     .cast {
-        max-width: 400px;
-        margin: 30px;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .cast-text {
+        text-align: left;
     }
     
     .cad img {
@@ -288,7 +299,63 @@ nav {
 
 }
 
+@media screen and (max-width: 840px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .nav-links-mobile:hover .menu {
+        display: block;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+        margin-left: -60px;
+        text-decoration: none;
+    }
+
+    .nav-links-mobile:hover > .menu ul {
+        display: block;
+        list-style-type: none;
+    }
+
+    .nav-links-mobile:hover .menu a {
+        color: #555;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .nav-links-mobile:hover .menu li {
+        margin: 15px 10px;
+    }
+
+    .nav-links-mobile .menu a:hover {
+        color: #CC5933;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .hero {
+        grid-template-rows: 700px;
+    }
+
+    .hero-image img {
+        display: grid;
+        min-width: 900px;
+        width: 110%;
+        height: 100%;
+        object-fit: cover;
+    }
 
      .skill {
         margin: 60px 0px;
