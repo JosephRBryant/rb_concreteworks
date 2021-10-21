@@ -354,6 +354,15 @@ nav {
 
 @media screen and (max-width: 768px) {
 
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
     .hero {
         grid-template-rows: 700px;
     }
