@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #EFEFF4;
 }
 
 h1 {
@@ -25,10 +26,12 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     margin: 32px 400px;
     padding: 24px;
     color: black;
+    background-color: white;
     width: auto;
 
 }
@@ -49,6 +52,7 @@ section {
     margin: 24px;
     padding: 24px;
     width: 320px;
+    border-radius: 10px;
 }
 
 .grey {
@@ -56,6 +60,7 @@ section {
     margin: 24px;
     padding: 24px;
     width: 320px;
+    border-radius: 10px;
 }
 
 .blue {
@@ -63,6 +68,7 @@ section {
     margin: 24px;
     padding: 24px;
     width: 320px;
+    border-radius: 10px;
 }
 
 /* Fonts */
